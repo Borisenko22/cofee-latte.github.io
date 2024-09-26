@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Latte</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz@0,14..32;1,14..32&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__top">
+            <div class="header__top-inner">
+              <div class="burger">
+                <div class="burger-menu">
+                  <div class="bar">
+                    <span class="bar-1"> </span>
+                    <span class="bar-2"> </span>
+                    <span class="bar-3"> </span>
+                  </div>
+                </div>
+                <div class="nav-menu">
+                  <li><a class="burger__link" href="#about">About</a></li>
+                  <li><a class="burger__link" href="#menu">Menu</a></li>
+                  <li><a class="burger__link" href="#info">Info</a></li>
+                  <li><a class="burger__link" href="#booking">Booking</a></li>
+                </div>
+              </div>
+              <nav class="header__nav-menu">
+                <ul class="header__list">
+                  <li class="header__list-item"><a href="#about" class="header__list-link">About</a></li>
+                  <li class="header__list-item"><a href="#menu" class="header__list-link">Menu</a></li>
+                  <li class="header__list-item"><a href="#info" class="header__list-link">Info</a></li>
+                  <li class="header__list-item"><a href="#booking" class="header__list-link">Booking</a></li>
+                </ul>
+              </nav>
+              <div class="header-logo">
+                <a class="logo" href="#">
+                  <img src="images/logo.svg" alt="Logo" />
+                </a>
+              </div>
+              <div class="header__socials">
+                <a class="header__socials-link" href="#">
+                  <img class="header__socials-img" src="images/email.svg" alt="EMAIL" />
+                </a>
+                <a class="header__socials-link" href="#">
+                  <img class="header__socials-img" src="images/facebook.svg" alt="FACEBOOK" />
+                </a>
+                <a class="header__socials-link" href="#">
+                  <img class="header__socials-img" src="images/instagram.svg" alt="INSTAGRAM" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header__body">
+            <img class="header__body-background" src="images/bg.jpg" autoplay loop muted><img>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about__inner">
+            <h6 class="about__title">About Us</h6>
+            <p class="about__text">
+              Tucked away in the corner of Wellington, Latte Cafe is a local
+              neighbourhood cafe and bar. Latte is all about doing what we
+              love, in a city that we love. We keep stocked with local produce
+              and pastries. Bring your family for a bite, or meet your friends
+              for a coffee or warm drink.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="menu" id="menu">
+        <div class="container">
+          <div class="menu__inner">
+            <div class="menu__left">
+              <h6 class="menu__title">Menu</h6>
+              <p class="menu__text">
+                We change our menu every season. Here is what we are currently
+                dishing up.
+              </p>
+              <div class="menu__tabs">
+                <button class="menu__tabs-btn" data-tab="#tab1">
+                  Food Menu
+                </button>
+                <button class="menu__tabs-btn" data-tab="#tab2">
+                  Drinks Menu
+                </button>
+                <button class="menu__tabs-btn" data-tab="#tab3">
+                  Takeaway Menu
+                </button>
+              </div>
+            </div>
+            <div class="menu__right">
+              <div class="tabs__content">
+                <div class="tabs__content-item" id="tab1">
+                  <h2 class="title__menu">LATTE CAFE</h2>
+                  <h3 class="subtitle__menu">Entres</h3>
+                  <div class="menu__content-list">
+                    <dt>Avocado Pear Soup</dt>
+                    <dd>Avacado, Saratoga Chips, Czechuan Button</dd>
+                    <span>$24</span>
+                  </div>
+                  <div class="menu__content-list">
+                    <dt>Rocket Raisin Salad</dt>
+                    <dd>Smoked Olive Oil, Fennel, Parmigiano di Reggiano</dd>
+                    <span>$18</span>
+                  </div>
+                  <div class="menu__content-list">
+                    <dt>Pepe alla Chitarra</dt>
+                    <dd>Spaghetti, Pancetta, Pecorino Romano</dd>
+                    <span>$23</span>
+                  </div>
+                  <div class="menu__content-list">
+                    <dt>Chilli Lobster</dt>
+                    <dd>Served With Texas Toast</dd>
+                    <span>$42</span>
+                  </div>
+                  <h3 class="subtitle__menu">Mains</h3>
+                  <div class="menu__content-list">
+                    <dt>New York Red Steak</dt>
+                    <dd>
+                      Fiddleheads, Day Lily, Arugula, Fingerling Potatoes
+                    </dd>
+                    <span>$63</span>
+                  </div>
+                  <div class="menu__content-list">
+                    <dt>Fig and Rosemary Salad</dt>
+                    <dd>
+                      Sause Proposal, Cauliflower, Hazelnuns, Golden Rasins
+                    </dd>
+                    <span>$46</span>
+                  </div>
+                  <div class="menu__content-list">
+                    <dt>Everything From The Sea</dt>
+                    <dd>
+                      White & Green Asparagus, Spring Onion, Sugar Snaps,
+                      Mayer Lemon
+                    </dd>
+                    <span>$48</span>
+                  </div>
+                  <div class="menu__content-list">
+                    <dt>Roasted Chiken & Duck Claypot</dt>
+                    <dd>Yukon Gold Potatoes, Broccoli Rabe, Pan Drippings</dd>
+                    <span>$59</span>
+                  </div>
+                  <div class="menu__content-list">
+                    <dt>2-Month Slow Beef in Wine</dt>
+                    <dd>
+                      Charred Green Beans, Romesco, Beef Fat Balsamic Onion
+                    </dd>
+                    <span>$43</span>
+                  </div>
+                </div>
+                <div class="tabs__content-item" id="tab2">
+                  <h2 class="title__menu">LATTE CAFE2</h2>
+                  <h3 class="subtitle__menu">Entres</h3>
+                  <div class="menu__content-list">
+                    <dt>Avocado Pear Soup</dt>
+                    <dd>Avacado, Saratoga Chips, Czechuan Button</dd>
+                    <span>$24</span>
+                  </div>
+                  <div class="menu__content-list">
+                    <dt>Rocket Raisin Salad</dt>
+                    <dd>Smoked Olive Oil, Fennel, Parmigiano di Reggiano</dd>
+                    <span>$18</span>
+                  </div>
+                  <div class="menu__content-list">
+                    <dt>Pepe alla Chitarra</dt>
+                    <dd>Spaghetti, Pancetta, Pecorino Romano</dd>
+                    <span>$23</span>
+                  </div>
+                  <div class="menu__content-list">
+                    <dt>Chilli Lobster</dt>
+                    <dd>Served With Texas Toast</dd>
+                    <span>$42</span>
+                  </div>
+                  <h3 class="subtitle__menu">Mains</h3>
+                  <div class="menu__content-list">
+                    <dt>New York Red Steak</dt>
+                    <dd>
+                      Fiddleheads, Day Lily, Arugula, Fingerling Potatoes
+                    </dd>
+                    <span>$63</span>
+                  </div>
+                  <div class="menu__content-list">
+                    <dt>Fig and Rosemary Salad</dt>
+                    <dd>
+                      Sause Proposal, Cauliflower, Hazelnuns, Golden Rasins
+                    </dd>
+                    <span>$46</span>
+                  </div>
+                  <div class="menu__content-list">
+                    <dt>Everything From The Sea</dt>
+                    <dd>
+                      White & Green Asparagus, Spring Onion, Sugar Snaps,
+                      Mayer Lemon
+                    </dd>
+                    <span>$48</span>
+                  </div>
+                  <div class="menu__content-list">
+                    <dt>Roasted Chiken & Duck Claypot</dt>
+                    <dd>Yukon Gold Potatoes, Broccoli Rabe, Pan Drippings</dd>
+                    <span>$59</span>
+                  </div>
+                  <div class="menu__content-list">
+                    <dt>2-Month Slow Beef in Wine</dt>
+                    <dd>
+                      Charred Green Beans, Romesco, Beef Fat Balsamic Onion
+                    </dd>
+                    <span>$43</span>
+                  </div>
+                </div>
+                <div class="tabs__content-item" id="tab3">
+                  <h2 class="title__menu">LATTE CAFE3</h2>
+                  <h3 class="subtitle__menu">Entres</h3>
+                  <div class="menu__content-list">
+                    <dt>Avocado Pear Soup</dt>
+                    <dd>Avacado, Saratoga Chips, Czechuan Button</dd>
+                    <span>$24</span>
+                  </div>
+                  <div class="menu__content-list">
+                    <dt>Rocket Raisin Salad</dt>
+                    <dd>Smoked Olive Oil, Fennel, Parmigiano di Reggiano</dd>
+                    <span>$18</span>
+                  </div>
+                  <div class="menu__content-list">
+                    <dt>Pepe alla Chitarra</dt>
+                    <dd>Spaghetti, Pancetta, Pecorino Romano</dd>
+                    <span>$23</span>
+                  </div>
+                  <div class="menu__content-list">
+                    <dt>Chilli Lobster</dt>
+                    <dd>Served With Texas Toast</dd>
+                    <span>$42</span>
+                  </div>
+                  <h3 class="subtitle__menu">Mains</h3>
+                  <div class="menu__content-list">
+                    <dt>New York Red Steak</dt>
+                    <dd>
+                      Fiddleheads, Day Lily, Arugula, Fingerling Potatoes
+                    </dd>
+                    <span>$63</span>
+                  </div>
+                  <div class="menu__content-list">
+                    <dt>Fig and Rosemary Salad</dt>
+                    <dd>
+                      Sause Proposal, Cauliflower, Hazelnuns, Golden Rasins
+                    </dd>
+                    <span>$46</span>
+                  </div>
+                  <div class="menu__content-list">
+                    <dt>Everything From The Sea</dt>
+                    <dd>
+                      White & Green Asparagus, Spring Onion, Sugar Snaps,
+                      Mayer Lemon
+                    </dd>
+                    <span>$48</span>
+                  </div>
+                  <div class="menu__content-list">
+                    <dt>Roasted Chiken & Duck Claypot</dt>
+                    <dd>Yukon Gold Potatoes, Broccoli Rabe, Pan Drippings</dd>
+                    <span>$59</span>
+                  </div>
+                  <div class="menu__content-list">
+                    <dt>2-Month Slow Beef in Wine</dt>
+                    <dd>
+                      Charred Green Beans, Romesco, Beef Fat Balsamic Onion
+                    </dd>
+                    <span>$43</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="location" id="info">
+        <div class="location__top-inner">
+          <div class="container">
+            <div class="location__top-info">
+              <div class="location__top-item top-item-1">
+                <h6 class="location__top-title">Location</h6>
+                <p class="location__top-text">101 Cuba St,</p>
+                <p class="location__top-text">Te Aro, Wellington</p>
+              </div>
+              <div class="location__top-item top-item-2">
+                <h6 class="location__top-title">Hours</h6>
+                <p class="location__top-text top-text--mg">
+                  Tuesday to Friday
+                  <span class="location__top-descr">7AM - 3PM</span>
+                </p>
+                <p class="location__top-text">Saturday to Sunday</p>
+                <span class="location__top-descr">8AM - 3PM</span>
+              </div>
+              <div class="location__top-item top-item-3">
+                <h6 class="location__top-title">Mondays?</h6>
+                <p class="location__top-text">
+                  We are closed on Mondays to reflect and refuel
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="location__images">
+          <div class="container">
+            <div class="location__images-box">
+              <div class="location__images-left">
+                <img class="loation__images-item" src="images/shop-item1.jpg" alt="" />
+                <img class="loation__images-item" src="images/shop-item2.jpg" alt="" />
+              </div>
+              <div class="location__images-right">
+                <img class="loation__images-item" src="images/shop-item3.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="award" id="booking">
+        <div class="container">
+          <div class="award__inner">
+            <h1 class="award__inner-title">Award winning cafe and bar.</h1>
+            <p class="award__inner-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+              in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <nav class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__list-item">
+                <a href="" class="footer__list-link">Home</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="" class="footer__list-link">About</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="" class="footer__list-link">Menu</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="" class="footer__list-link">Info</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="" class="footer__list-link">Contact</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="" class="footer__list-link">Bookings</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="" class="footer__list-link">Privacy Policy</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="footer__menu-blog">
+            <li class="footer__list-item">
+              <a href="" class="footer__list-link">Style Guide</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="" class="footer__list-link">Licenses</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="" class="footer__list-link">Instructions</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="" class="footer__list-link">Changelog</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="" class="footer__list-link">Password</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="" class="footer__list-link">404</a>
+            </li>
+          </ul>
+          <div class="footer__copy">
+            <span>© Latte Cafe 2022.</span>
+            <span>Built by Nikolai Bain.</span>
+            <span>Powered by Webflow.</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
